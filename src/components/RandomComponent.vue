@@ -1,6 +1,6 @@
 <template>
     <section>
-        <h2>Random Component</h2>
+        <h2>Random Component 12</h2>
         <RandomChildComponent />
     </section>
 </template>
