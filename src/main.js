@@ -1,4 +1,11 @@
-import { createApp } from 'vue'
-import App from './App.vue'
+import { createApp } from 'vue';
+import App from './App.vue';
+console.log('App started');
 
-createApp(App).mount('#app')
+import firebaseMessaging from './firebase'
+
+const app = createApp(App)
+
+app.config.globalProperties.$messaging = firebaseMessaging
+
+app.mount('#app');
